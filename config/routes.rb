@@ -1,4 +1,4 @@
 TwitterHashSearch::Application.routes.draw do
   root to: 'searches#new'
-  resources :searches, only: [:new]
+  resources :searches, only: [:new, :create, :show]
 end
